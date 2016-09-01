@@ -6,13 +6,16 @@
 ```
 mkdir ~/maven
 cd ~/maven
-curl -O http://mirrors.advancedhosters.com/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+curl -O \
+  http://mirrors.advancedhosters.com/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
 tar xvfz apache-maven-3.3.9-bin.tar.gz
 export MAVEN_HOME=$(pwd)/apache-maven-3.3.9
 ```
 2. Generate maven project
 ```
-mvn archetype:generate -DgroupId=edu.tutorial.aspectj -DartifactId=aspectj_quick_start -DarchetypeGroupId=org.apache.maven.archetypes  -DarchetypeArtifactId=maven-archetype-quickstart   -DarchetypeVersion=RELEASE
+mvn archetype:generate -DgroupId=edu.tutorial.aspectj -DartifactId=aspectj_quick_start \        
+  -DarchetypeGroupId=org.apache.maven.archetypes \
+  -DarchetypeArtifactId=maven-archetype-quickstart   -DarchetypeVersion=RELEASE
 ```
 Maven aspectj Plugin:
 ```
